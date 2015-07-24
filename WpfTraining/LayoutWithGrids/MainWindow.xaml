@@ -20,5 +20,12 @@
         <Rectangle Fill="Blue" Grid.Row="0" Grid.Column="0"></Rectangle>
         <Rectangle Fill="Green" Grid.Row="1" Grid.Column="0"></Rectangle>
         <Rectangle Fill="Yellow" Grid.Row="2" Grid.Column="1"></Rectangle>
+        
+        <Label 
+            Content="This is some label with super long text" 
+            Grid.Row="1"
+            Grid.Column="0"
+            Grid.ColumnSpan="2"
+            FontSize="16"></Label>
     </Grid>
 </Window>
