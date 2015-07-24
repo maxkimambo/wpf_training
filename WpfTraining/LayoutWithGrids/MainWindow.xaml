@@ -9,8 +9,16 @@
             <RowDefinition Height="2*"></RowDefinition>
         </Grid.RowDefinitions>
         
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*">               
+            </ColumnDefinition>
+            <ColumnDefinition Width="2*">
+                
+            </ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        
         <Rectangle Fill="Blue" Grid.Row="0"></Rectangle>
         <Rectangle Fill="Green" Grid.Row="1"></Rectangle>
-        <Rectangle Fill="Yellow" Grid.Row="2"></Rectangle>
+        <Rectangle Fill="Yellow" Grid.Row="2" Grid.Column="1"></Rectangle>
     </Grid>
 </Window>
