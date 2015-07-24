@@ -3,6 +3,17 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         Title="Stack Panel Demo" Height="350" Width="525">
     <Grid>
-        
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="2*"></RowDefinition>
+            <RowDefinition></RowDefinition>
+        </Grid.RowDefinitions>
+
+        <StackPanel Orientation="Horizontal">
+            <TextBlock Text="Your Name" Margin="5"></TextBlock>
+            <TextBox Width="100" VerticalAlignment="Top" Height="30" Margin="5"></TextBox>
+        </StackPanel>
+
     </Grid>
+   
 </Window>
