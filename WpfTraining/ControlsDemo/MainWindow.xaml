@@ -3,6 +3,100 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         Title="MainWindow" Height="350" Width="525">
     <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"></RowDefinition>
+            <RowDefinition Height="Auto"></RowDefinition>
+            <RowDefinition Height="Auto"></RowDefinition>
+            <RowDefinition Height="Auto"></RowDefinition>
+            <RowDefinition Height="Auto"></RowDefinition>
+            <RowDefinition Height="Auto"></RowDefinition>
+            <RowDefinition Height="Auto"></RowDefinition>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions> 
+            <ColumnDefinition Width="*"></ColumnDefinition>
+            <ColumnDefinition Width="2*"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
         
+        <TextBlock Text="Full Name"
+                   HorizontalAlignment="Right"
+                   VerticalAlignment="Bottom"
+                   Margin="5"
+                   ></TextBlock>
+        <TextBox HorizontalAlignment="Left"
+                 VerticalAlignment="Bottom"
+                 Grid.Row="0" Grid.Column="1"
+                 Width="250"
+                 Height="30"
+                 Margin="5"
+                 > </TextBox>
+        
+        <TextBlock Text="Gender"
+                   HorizontalAlignment="Right"
+                   VerticalAlignment="Bottom"
+                   Margin="5"
+                   Grid.Row="1"
+                   Grid.Column="0"
+                   ></TextBlock>
+
+        <StackPanel Orientation="Horizontal"
+                    Grid.Row="1"
+                    Grid.Column="1"
+                    HorizontalAlignment="Stretch"
+                    >
+            <RadioButton GroupName="Gender" Content="Male" Margin="5"></RadioButton>
+            <RadioButton GroupName="Gender" Content="Female" Margin="5"></RadioButton>
+           
+        </StackPanel>
+        <TextBlock Text="Computer Hardware"
+                       HorizontalAlignment="Right" Margin="5"
+                       Grid.Row="2" Grid.Column="0"></TextBlock>
+        
+        <StackPanel Orientation="Horizontal" 
+                    Grid.Row="2"
+                    Grid.Column="1">
+            <CheckBox Content="Desktop" Margin="5"></CheckBox>
+            <CheckBox Content="Laptop" Margin="5"></CheckBox>
+            <CheckBox Content="Server" Margin="5"></CheckBox>
+            <CheckBox Content="Tablet" Margin="5"></CheckBox>
+            
+        </StackPanel>
+        
+        <TextBlock Grid.Row="3" Grid.Column="0"
+                   Text="Occupation"
+                   VerticalAlignment="Bottom"
+                   HorizontalAlignment="Right"
+                   Margin="5"
+                   >
+            
+        </TextBlock>
+        
+        <ComboBox Grid.Row="3"
+                  Grid.Column="1"
+                  HorizontalAlignment="Left"
+                  VerticalAlignment="Bottom"
+                  Margin="5"
+                  Width="200"
+                  >
+            
+            <ComboBoxItem Content="Programmer"></ComboBoxItem>
+            <ComboBoxItem Content="Software Engineer"></ComboBoxItem>
+            <ComboBoxItem Content="Web Developer"></ComboBoxItem>
+            <ComboBoxItem Content="Project Manager"></ComboBoxItem>
+            <ComboBoxItem Content="Freelancer"></ComboBoxItem>
+            
+        </ComboBox>
+        
+        <TextBlock Text="Start date"
+                   Grid.Row="4"
+                   Grid.Column="0"
+                   HorizontalAlignment="Right"
+                   VerticalAlignment="Center"
+                   ></TextBlock>
+        
+        <Calendar Grid.Row="4"
+                  Grid.Column="1"
+                  Margin="5"
+                  HorizontalAlignment="Left"
+            ></Calendar>
     </Grid>
 </Window>
