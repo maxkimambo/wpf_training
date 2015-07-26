@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StackPanelDemo", "StackPane
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WrapPanel", "WrapPanel\WrapPanel.csproj", "{5B338BA9-0F42-4954-A657-DEFFECF5B2B0}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LayoutDockPanel", "LayoutDockPanel\LayoutDockPanel.csproj", "{F57FE794-2CBD-44F8-B258-F3E073DAEEF2}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{5B338BA9-0F42-4954-A657-DEFFECF5B2B0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5B338BA9-0F42-4954-A657-DEFFECF5B2B0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5B338BA9-0F42-4954-A657-DEFFECF5B2B0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F57FE794-2CBD-44F8-B258-F3E073DAEEF2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F57FE794-2CBD-44F8-B258-F3E073DAEEF2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F57FE794-2CBD-44F8-B258-F3E073DAEEF2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F57FE794-2CBD-44F8-B258-F3E073DAEEF2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
