@@ -24,5 +24,21 @@ namespace ControlsDemo
         {
             InitializeComponent();
         }
+
+        private void BtnSave_OnClick(object sender, RoutedEventArgs e)
+        {
+           
+            var userData = new StringBuilder();
+            userData.Append(String.Format("Full name: {0}", TxtFullName.Text)); 
+            userData.Append(String.Format("Gender: {0}", RdMale.IsChecked != null && (bool) RdMale.IsChecked ? "Male" : "Female"));
+
+           userData.Append(String.Format("Your hardware: {0}",(bool) ChkDesktop.IsChecked? "Desktop": "")); 
+           userData.Append(String.Format("{0}",(bool) ChkLaptop.IsChecked? "Laptop": "")); 
+           userData.Append(String.Format("{0}",(bool) ChkTablet.IsChecked? "Tablet": "")); 
+            userData.Append(String.Format("Start date: {0}", CalStartDate.SelectedDate)); 
+           
+
+            MessageBox.Show(userData.ToString()); 
+        }
     }
 }
