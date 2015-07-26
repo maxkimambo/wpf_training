@@ -6,12 +6,22 @@
         <StackPanel Name="Display">
             <StackPanel Orientation="Horizontal">
                 <TextBlock Text="Name: "></TextBlock>
-                <TextBlock Margin="5" Text="{Binding Name}" ></TextBlock>
+                <TextBox Margin="5" Text="{Binding Name, Mode=TwoWay}" ></TextBox>
             </StackPanel>
 
             <StackPanel Orientation="Horizontal">
                 <TextBlock Text="Title "></TextBlock>
-                <TextBlock Margin="5" Text="{Binding Title}" ></TextBlock>
+                <TextBox Margin="5" Text="{Binding Title, Mode=TwoWay}" ></TextBox>
+            </StackPanel>
+
+            <StackPanel Orientation="Horizontal">
+                <TextBlock Text="Name: "></TextBlock>
+                <TextBox Margin="5" Text="{Binding Name, Mode=OneWay}" ></TextBox>
+            </StackPanel>
+
+            <StackPanel Orientation="Horizontal">
+                <TextBlock Text="Title "></TextBlock>
+                <TextBox Margin="5" Text="{Binding Title, Mode=OneWay}" ></TextBox>
             </StackPanel>
             <Button Name="BtnEmployee" Width="100" Height="30" Content="Change" Click="BtnEmployee_OnClick"></Button>
         </StackPanel>
