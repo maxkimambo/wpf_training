@@ -35,8 +35,9 @@ namespace ControlsDemo
            userData.Append(String.Format("Your hardware: {0}",(bool) ChkDesktop.IsChecked? "Desktop": "")); 
            userData.Append(String.Format("{0}",(bool) ChkLaptop.IsChecked? "Laptop": "")); 
            userData.Append(String.Format("{0}",(bool) ChkTablet.IsChecked? "Tablet": "")); 
-            userData.Append(String.Format("Start date: {0}", CalStartDate.SelectedDate)); 
-           
+            userData.Append(String.Format("Start date: {0}", CalStartDate.SelectedDate));
+
+            MessageBox.Show(CboOccupation.SelectedValue.ToString()); 
 
             MessageBox.Show(userData.ToString()); 
         }
