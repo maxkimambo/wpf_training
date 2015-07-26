@@ -20,10 +20,26 @@ namespace DataBinding
     /// </summary>
     public partial class MainWindow : Window
     {
+
+        private Employee emp; 
         public MainWindow()
         {
             InitializeComponent();
-            DataContext = Employee.GetEmployee(); 
+            emp = new Employee()
+            {
+                Title = "Janitor",
+                Name = "John Doe"
+            };
+
+            DataContext = emp; 
+
+        }
+
+
+        private void BtnEmployee_OnClick(object sender, RoutedEventArgs e)
+        {
+            emp.Name = "New name";
+            emp.Title = "New Title"; 
         }
     }
 }

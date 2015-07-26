@@ -13,6 +13,7 @@
                 <TextBlock Text="Title "></TextBlock>
                 <TextBlock Margin="5" Text="{Binding Title}" ></TextBlock>
             </StackPanel>
+            <Button Name="BtnEmployee" Width="100" Height="30" Content="Change" Click="BtnEmployee_OnClick"></Button>
         </StackPanel>
     </Grid>
 </Window>
